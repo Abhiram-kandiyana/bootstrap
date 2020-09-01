@@ -17,6 +17,12 @@
 </head>
 
 <body>
+    <!-- <div class="alert alert-warning alert-dismissable" role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+            <span >&times;</span>
+        </button>
+        <strong>Note:</strong>: Please <a href="tel:+919676306770" class="alert-link">call</a> us to reserve for more than six guests.
+    </div> -->
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -46,8 +52,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="image-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center ">
+                    <a href="#reservetable" class="btn btn-sm btn-warning btn-block" >Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -62,7 +71,7 @@
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza</h2>
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
 
                     </div>
@@ -77,8 +86,13 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img class="d-flex img-thumbnail ml-3 align-self-center" src="img/buffet.png" alt="buffet">
+                </div>
             </div>
         </div>
 
@@ -97,6 +111,46 @@
                     </div>
                 </div>
                 
+            </div>
+        </div>
+        <div class="row row-content align-items-center justify-content-center">
+            <div class="col-12 col-sm-8">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form role="form" id="reservetable">
+                            <div class="form-group row">
+                                
+                                <label for="No of guests" class="col-md-2 col-form-label">Number of Guests</label>
+                                <div class="col-md-10">
+                                    <label class="radio radio-inline"><input type="radio"  name="guests" value="1">1 &nbsp; </label>   
+                                    <label class="radio radio-inline"><input type="radio" name="guests" value="2"> 2 &nbsp;</label>
+                                    <label class="radio radio-inline"><input type="radio" name="guests" value="3"> 3 &nbsp;</label>
+                                    <label class="radio radio-inline"><input type="radio" name="guests" value="4"> 4 &nbsp;</label>
+                                    <label class="radio radio-inline"><input type="radio" name="guests" value="5"> 5 &nbsp;</label>
+                                    <label class="radio radio-inline"><input type="radio" checked name="guests" value="6"> 6 &nbsp;</label>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="Dateandtime" class="col-md-2 col-form-label">Date and Time</label>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="date">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" id="time" name="time" placeholder="time">
+                                </div>
+                        
+                            </div>
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-2">
+                                    <button type="submit" class="btn btn-primary">
+                                        Reserve
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
